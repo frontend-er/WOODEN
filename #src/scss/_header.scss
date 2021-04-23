@@ -1,3 +1,64 @@
 /* Header styles */
 
+.header-head {
+   background: url(../img/Header/header-bg.png) 0 0 no-repeat;
+}
+.container {
+
+}
+
+
+.header {
+   // .header__top
+  
+   &__top {
+   }
+
+   // .header__menu
+
+   &__menu {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   // .header__burger
+
+   &__burger {
+   }
+
+   // .header__logo
+
+   &__logo {
+   }
+
+   // .header__links
+
+   &__links {
+   }
+
+   // .header__link
+
+   &__link {
+      ul {
+         display: flex;
+         justify-content: space-between;
+      }
+   }
+
+   // .header__info
+
+   &__info {
+   }
+
+   // .header__language
+
+   &__language {
+   }
+
+   &__side {
+      display: flex;
+      justify-content: space-between;
+   }
+}
+
 /*Header styles end*/
