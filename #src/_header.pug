@@ -1,9 +1,8 @@
 h1.header-head
-   .header__top.container 
+   .header__top.container-fuid 
       .header__menu.row
-         .header__burger.col-lg-3 MENU 
-
-            .hamburger-menu
+         .header__burger.col-lg-3.col-md-1.col-sm-1.col-sm-1
+            .hamburger-menu.col-lg-1.col-md-1.col-sm-1.col-xs-1
                input#menu__toggle(type='checkbox')
                label.menu__btn(for='menu__toggle')
                   span
@@ -14,13 +13,15 @@ h1.header-head
                      a.menu__item(href='#') PRODUCTS
                   li
                      a.menu__item(href='#') ABOUT
+            .header__label.col-lg-1 MENU
 
 
 
 
-         .header__logo.col-lg-3
+
+         .header__logo.col-lg-1
             img(src="img/Header/logo.png" alt="") 
-         .header__links.col-lg-4
+         .header__links.col-lg-3
             .header__link
                ul
                   li 
@@ -30,7 +31,7 @@ h1.header-head
                   li
                      a(href="#") ABOUT 
          .header__side.col-lg-1
-            .header__info  
+            .header__info
                img(src="img/Header/info.png" alt="")  
             .header__language EN 
             .header__language-change

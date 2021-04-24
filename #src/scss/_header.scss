@@ -1,63 +1,101 @@
+$mainFont:'Sarabun',
+sans-serif;
+
+
 /* Header styles */
 
 .header-head {
+   padding-top: 5px;
    background: url(../img/Header/header-bg.png) 0 0 no-repeat;
+   margin: 0 auto;
+   background-position: center;
+   overflow: hidden;
 }
-.container {
 
+.hamburger-menu {
+   margin-top: 15px;
 }
 
 
 .header {
    // .header__top
-  
-   &__top {
-   }
+
+   &__top {}
 
    // .header__menu
 
    &__menu {
       display: flex;
       justify-content: space-between;
+      align-items: center;
+      font-family: $mainFont;
+      color: #fff;
+      font-weight: bold;
    }
 
    // .header__burger
 
    &__burger {
+      display: flex;
+      font-family: $mainFont;
+      font-weight: bold;
+      align-items: center;
+
+   }
+
+   &__label {
+      margin-top: 0px;
+      margin-left: 1rem;
+      opacity: 0.5;
    }
 
    // .header__logo
 
-   &__logo {
-   }
+   &__logo {}
 
    // .header__links
 
-   &__links {
-   }
+   &__links {}
 
    // .header__link
 
    &__link {
+      opacity: 0.5;
+      margin-top: 15px;
+      margin-left: 20px;
+
       ul {
          display: flex;
          justify-content: space-between;
+
+         a {
+            color: #fff;
+         }
       }
    }
 
    // .header__info
 
    &__info {
+      margin-right: 2rem;
    }
 
    // .header__language
 
    &__language {
+      opacity: 0.5;
    }
 
    &__side {
+      margin-right: 1rem;
       display: flex;
       justify-content: space-between;
+      align-items: center;
+   }
+
+   &__language-change {
+      margin-top: 10px;
+      margin-left: 1rem;
    }
 }
 

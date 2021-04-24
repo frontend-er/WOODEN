@@ -91,20 +91,63 @@ h6 {
 /*---Обнуление---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /* Header styles */
 .header-head {
+  padding-top: 5px;
   background: url(../img/Header/header-bg.png) 0 0 no-repeat;
+  margin: 0 auto;
+  background-position: center;
+  overflow: hidden;
+}
+
+.hamburger-menu {
+  margin-top: 15px;
 }
 
 .header__menu {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  font-family: "Sarabun", sans-serif;
+  color: #fff;
+  font-weight: bold;
+}
+.header__burger {
+  display: flex;
+  font-family: "Sarabun", sans-serif;
+  font-weight: bold;
+  align-items: center;
+}
+.header__label {
+  margin-top: 0px;
+  margin-left: 1rem;
+  opacity: 0.5;
+}
+.header__link {
+  opacity: 0.5;
+  margin-top: 15px;
+  margin-left: 20px;
 }
 .header__link ul {
   display: flex;
   justify-content: space-between;
 }
+.header__link ul a {
+  color: #fff;
+}
+.header__info {
+  margin-right: 2rem;
+}
+.header__language {
+  opacity: 0.5;
+}
 .header__side {
+  margin-right: 1rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.header__language-change {
+  margin-top: 10px;
+  margin-left: 1rem;
 }
 
 /*Header styles end*/
@@ -148,26 +191,29 @@ h6 {
 }
 
 .menu__btn {
-  display: flex;
-  align-items: center;
-  position: fixed;
+  display: block;
   top: 2px;
   left: 10px;
   width: 26px;
   height: 26px;
   cursor: pointer;
-  z-index: 1;
+  z-index: 100;
+}
+@media (min-width: 990px) {
+  .menu__btn {
+    pointer-events: none;
+  }
 }
 
 .menu__btn > span,
 .menu__btn > span::before,
 .menu__btn > span::after {
-  display: block;
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: #616161;
+  background-color: #bea67c;
   transition-duration: 0.25s;
+  z-index: 100;
 }
 
 .menu__btn > span::before {
@@ -181,7 +227,7 @@ h6 {
 }
 
 .menu__box {
-  display: block;
+  display: flex;
   position: fixed;
   visibility: hidden;
   top: 0;
@@ -210,11 +256,6 @@ h6 {
   font-weight: 600;
   text-decoration: none;
   transition-duration: 0.25s;
-}
-@media (max-width: 990px) {
-  .menu__item {
-    display: none;
-  }
 }
 
 .menu__item:hover {
